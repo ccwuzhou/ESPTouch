@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "ESPTouch"
-  s.version      = "1.0.0"
-  s.summary      = "A short description of ESPTouch."
+  s.name         = "WWZESPTouch"
+  s.version      = "1.1.0"
+  s.summary      = "A short description of WWZESPTouch."
 
   
-  s.homepage     = "https://github.com/ccwuzhou/ESPTouch"
+  s.homepage     = "https://github.com/ccwuzhou/WWZESPTouch"
 
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
@@ -29,16 +29,16 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "7.0"
 
-  s.source       = { :git => "https://github.com/ccwuzhou/ESPTouch.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ccwuzhou/WWZESPTouch.git", :tag => "#{s.version}" }
 
-  s.source_files  = "ESPTouch/*.{h,m}"
+  s.source_files  = "WWZESPTouch/WWZESPTouch/*.{h,m}"
 
   # s.public_header_files = "WWZSocket/WWZSocket.h"
 
   s.requires_arc = true
 
   s.framework  = "UIKit"
-
+  # s.libraries = 'z.1','iconv.2','bz2.1.0','stdc++.6.0.9','c++','sqlite3'
 end
