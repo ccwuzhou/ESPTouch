@@ -34,7 +34,7 @@
 		B094F2301E6E883700D5380E /* ESPUDPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B094F2131E6E883700D5380E /* ESPUDPSocketServer.m */; };
 		B094F2311E6E883700D5380E /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = B094F2141E6E883700D5380E /* IPAddress.c */; };
 		B094F2321E6E883700D5380E /* IPAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = B094F2151E6E883700D5380E /* IPAddress.h */; };
-		B094F2331E6E883700D5380E /* WZESPTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = B094F2161E6E883700D5380E /* WZESPTouch.h */; };
+		B094F2331E6E883700D5380E /* WZESPTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = B094F2161E6E883700D5380E /* WZESPTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B094F2341E6E883700D5380E /* WZESPTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = B094F2171E6E883700D5380E /* WZESPTouch.m */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B094F2221E6E883700D5380E /* ESPGuideCode.h in Headers */,
+				B094F2331E6E883700D5380E /* WZESPTouch.h in Headers */,
 				B094F21E1E6E883700D5380E /* ESPDataCode.h in Headers */,
 				B094F21A1E6E883700D5380E /* ESP_CRC8.h in Headers */,
 				B094F2271E6E883700D5380E /* ESPTouchResult.h in Headers */,
@@ -156,7 +157,6 @@
 				B094F2321E6E883700D5380E /* IPAddress.h in Headers */,
 				B094F21C1E6E883700D5380E /* ESP_NetUtil.h in Headers */,
 				B094F2251E6E883700D5380E /* ESPTouchGenerator.h in Headers */,
-				B094F2331E6E883700D5380E /* WZESPTouch.h in Headers */,
 				B094F22F1E6E883700D5380E /* ESPUDPSocketServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +357,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WWZESPTouch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZESPTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -375,7 +377,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WWZESPTouch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZESPTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -401,6 +405,7 @@
 				B094F1FA1E6E882400D5380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
